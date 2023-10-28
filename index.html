@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />  <title>NCPA Sign-up Centre</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+    html {
+      font-family: 'Open Sans', Helvetica, arial, sans-serif;
+      text-align: center;
+      background-color: #eeeeee;
+      text-align: center;
+      margin: 0;
+    }
+    html *,
+    html *:before,
+    html *:after {
+      box-sizing: border-box;
+      /* transition: 0.5s ease-in-out; */
+    }
+    .conterer *,
+    .centerer *:before,
+    .centerer *:after, a {
+      box-sizing: border-box;
+      transition: 0.55s ease-in-out;
+    }
+    html i, html em,
+    html b, html strong,
+    html span {
+      transition: none;
+    }
+    body {
+      margin: 0;
+    }
+
+    *:before,
+    *:after {
+      z-index: -1;
+    }
+
+    a {
+      text-decoration: none;
+      line-height: 80px;
+      color: black;
+    }
+
+    h1 {
+      font-family: "Raleway";
+      margin-bottom: 35px;
+      margin-top: 0px;
+    }
+
+    .centerer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    [class^="btn-"] {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: 80px;
+      max-width: 400px;
+      margin: 1.2rem auto;
+      text-transform: uppercase;
+      border: 1px solid currentColor;
+    }
+
+    #copyright {
+      font-family: "Raleway";
+      margin-top: 35px;
+      margin-bottom: 0px;
+      color: rgb(56, 56, 56);
+    }
+
+
+
+
+    .btn-nightstudio {
+      color: #5e35cf;
+    }
+    .btn-nightstudio:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid #26469e85;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-nightstudio:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid #1e2591;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-nightstudio:hover {
+      color: #cbccc5;
+    }
+    .btn-nightstudio:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-nightstudio:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+    .btn-apnightstudio {
+      color: #27881e;
+    }
+    .btn-apnightstudio:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid #20864285;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-apnightstudio:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid #176614;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-apnightstudio:hover {
+      color: #cbccc5;
+    }
+    .btn-apnightstudio:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-apnightstudio:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+    .btn-practiseroom {
+      color: #9b8d12;
+    }
+    .btn-practiseroom:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid #adab2d86;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-practiseroom:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid #a78107;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-practiseroom:hover {
+      color: #cbccc5;
+    }
+    .btn-practiseroom:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-practiseroom:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+    .btn-writinglab {
+      color: #7c0f0f;
+    }
+    .btn-writinglab:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid #ad3c2d91;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-writinglab:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid #941a0a;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-writinglab:hover {
+      color: #cbccc5;
+    }
+    .btn-writinglab:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-writinglab:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+    .btn-audiohive {
+      color: #474747;
+    }
+    .btn-audiohive:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid #47474791;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-audiohive:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid #474747;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-audiohive:hover {
+      color: #cbccc5;
+    }
+    .btn-audiohive:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-audiohive:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+    .btn-speakingcenter {
+      color: rgb(0, 101, 89);
+    }
+    .btn-speakingcenter:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid rgba(0, 101, 89, 0.569);
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-speakingcenter:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid rgb(3, 74, 65);
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-speakingcenter:hover {
+      color: #cbccc5;
+    }
+    .btn-speakingcenter:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-speakingcenter:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+
+
+
+    .btn-mathcenter {
+      color: rgb(0, 130, 190);
+    }
+    .btn-mathcenter:before {
+      right: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      border-bottom: 80px solid  rgb(4, 106, 153);;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    .btn-mathcenter:after {
+      left: -50px;
+      border-right: 50px solid transparent;
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+      border-bottom: 80px solid  rgb(0, 130, 190);;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .btn-mathcenter:hover {
+      color: #cbccc5;
+    }
+    .btn-mathcenter:hover:before {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    .btn-mathcenter:hover:after {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+    .inner {
+      /* background: rgba(130, 157, 218, 0.678); */
+      height: auto;
+      overflow-y: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .left {
+      /* background: rgba(94, 94, 228, 0.39); */
+      width: 400px;
+      height: auto;
+      float: left;
+      margin-right: 2.5em;
+    }
+
+    @media(max-width: 900px) {
+      .right {
+        display: none;
+      }
+    }
+
+    .right {
+      /* background: rgba(110, 110, 209, 0.363); */
+      width: 400px;
+      height: auto;
+      float: left;
+    }
+
+    .image-div {
+      height: 492px;
+      padding: 1px;
+      border: rgb(155, 155, 155) solid 1px;
+      transition: 0.55s ease-in-out;
+      margin-top: 4px;
+    }
+
+    .image-div:hover {
+      border: #cbccc5 solid 1px;
+    }
+
+    img {
+      height: 100%;
+      max-width: 100%;
+    }
+
+    #from {
+      font-size: 0.8rem;
+      font-family: "Raleway";
+      margin-top: 2px;
+      margin-bottom: 0px;
+      color: rgb(160, 160, 160);
+      text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+<div class="centerer">
+
+  <div class="inner">
+
+    <div class="left">
+      <h1>NCPA Sign-up Centre</h1>
+      <a class="btn-audiohive" href="https://outlook.office365.com/owa/calendar/AudioHiveBooking@ncpachina.org/bookings/">AudioHive</a>
+      <a class="btn-practiseroom" href="practiceroom"> Music Practice Room</a>
+      <a class="btn-nightstudio" href="nightstudio">Night Studio</a>
+      <!-- <a class="btn-apnightstudio" href="ap">AP Night Studio</a> -->
+      <a class="btn-speakingcenter" href="https://outlook.office365.com/owa/calendar/NCPASpeakingCenter@ncpachina.org/bookings/">Speaking Center</a>
+      <a class="btn-writinglab" href="https://outlook.office365.com/owa/calendar/NCPAWritingCenter@ncpachina.org/bookings/">Writing Centre</a>
+      <!-- <a class="btn-mathcenter" href="https://outlook.office365.com/owa/calendar/MathPeerTutoringCenter@ncpachina.org/bookings/">Math Center</a> -->
+      <p id="copyright">© 2019 Tech Solution Team</p>
+    </div>
+
+    <div class="right" style="display: none;">
+      <div class="image-div">
+        <img id="poster-image" src="" alt="">
+      </div>
+      <!-- <p id="from">*Promotion authorised by the Student Government</p> -->
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  var maxPoster = 7;
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  function changeImage() {
+    var image = document.getElementById("poster-image");
+    console.log(image);
+    image.src = ((getRandomInt(maxPoster) + 1) + ".png")  
+  }
+
+changeImage()
+
+setInterval(function() {console.log("interval"); changeImage()}, 6000);
+
+
+</script>
+
+
+</body>
+</html>

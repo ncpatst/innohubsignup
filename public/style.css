@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image:url(MicrosoftTeams-image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Sans Serif";   
+}
+.background{
+  /* background-color: aqua; */
+  font-size: 600%;
+  text-align: center;
+}
+.main{
+  z-index: 5;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px 10px rgba(64, 64, 64, 0.5);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255);
+}
+.ctitle{
+  /* margin-left: 45%; */
+  font-size: 75%;
+  margin-top: 15%;
+}
+.logo{
+  position: relative;
+  height: 30%;
+  width: 40%;
+  margin-bottom: -15%;
+}
+.content{
+  width: 100%;
+  height: 75%;
+  margin: 0 auto;
+  font-size: 130%; 
+}
+.datet{
+  width: 30%;
+  height: 50%;
+  position: relative;
+  float: left;
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.inputdata{
+  width: 50%;
+  height: 70%;
+  float: left;
+  margin-top: 4%;
+}
+.getleft{
+  float: left;
+  width: 50%;
+}
+.getright{
+  width: 50%;
+  float: left;
+}
+.imgbut { /*This is for the back button*/
+  z-index: 5;
+  margin-left: -40%;
+  margin-top: 3%;
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  color: #000;
+}
+button{
+  height: 45px;
+  width: 75%;
+  margin-top: 5%;
+  background-color: rgba(53, 50, 50, 0.6);
+  border-radius: 30px 30px 30px 30px;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+.informaiton{
+  color: red;
+  font-size: 300%;
+}
+.form-control{
+  border: none;
+  background-color: inherit;
+  outline: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0 0 0 0 ;
+}
+
+.geterr{
+  margin-top: 7%;
+  font-size: 200%;
+  margin-bottom: 10%;
+}
+
+#mytable{
+  margin-top: 4%;
+}

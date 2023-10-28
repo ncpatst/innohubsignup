@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Innohub signup</title>
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<style>
+		.main{
+          height: 900px;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<img src="NCPA-logo.png" class="logo">
+		<div class="background" >
+		  <img src="back-logo-black.png" class="imgbut" onclick="goBack()" for="ctitle">
+		  <h1 class="ctitle">Innohub signup</h1>
+		</div>
+    	<div class="geterr">
+			<p class="err">The request have been cancel.</p>
+			<p class="err">Please check the data correct.</p>
+			<p class="err"><%= teachername %> </p>
+			<p class="err">Class: <%= classs %></p>
+			<p class="err">Date: <%= date %></p>
+			<p class="err">Time Period: <%= timePeriod %></p>
+		</div>
+	</div>
+
+</body>
+</html>

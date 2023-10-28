@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Innohub Sign-Up</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		body{
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		button {
+			display: inline-block;
+			border-radius: 300px;
+			background-color: rgba(26, 20, 20, 0.75);
+			border: none;
+			color: #ffffff;
+			text-align: center;
+			font-size: 150%;
+			padding: 0.8%;
+			width: 70%;
+			font-family: "Sans Serif";
+			margin-left: 15%;
+			margin-right: 15%;
+			margin-bottom: 5%
+		}
+		button:hover {
+			display: inline-block;
+			border-radius: 300px;
+			background-color: rgba(113, 113, 113, 0.67);
+			border: none;
+			color: #000;
+			text-align: center;
+			font-size: 150%;
+			padding: 0.8%;
+			width: 70%;
+			font-family: "Sans Serif";
+			margin-left: 15%;
+			margin-right: 15%;
+			margin-bottom: 5%
+		}
+
+		button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+		button span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+			color: #000;
+		}
+		
+		button:hover span {
+			padding-right: 25px;
+		}
+
+		button:hover span:after {
+			opacity: 1;
+		}
+
+		p {
+			font-family: "Sans Serif";
+			font-size: 300%;
+			margin: 3.5% 0;
+			color: #fffefe;
+		}
+		.image {
+			z-index: 3;
+			position: relative;
+			height: 5rem;
+			width: 5rem;
+			margin-right: 2%;
+			vertical-align: middle;
+		}
+
+</style>
+</head>
+<body>
+	<div class="main">
+		<!-- <img src="back-logo-black.png" onclick="goBack()"> -->
+		<img src="NCPA-logo.png" class="logo">
+		<div class="background" >
+		  <img src="back-logo-black.png" class="imgbut" onclick="goBack()" for="ctitle">
+		  <h1 class="ctitle">Innohub signup</h1>
+		</div>
+	<button onclick="location.href='signup'"><span>Sign-up</span></button><br>
+	<!-- <button onclick="location.href='mysql'"><span>Data Panel</span></button><br> -->
+	<button onclick="location.href='cancel'"><span>Cancel Request</span></button>
+	</div>
+</body>
+</html>

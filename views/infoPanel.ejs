@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Innohub signupe</title>
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<style>
+	body{
+      background-image: url(background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .background{
+      /* background-color: aqua; */
+      font-size: 75px;
+      margin-top: 70px;
+      text-align: center;
+    }
+    .main{
+      z-index: 5;
+      width: 60%;
+      height: 80%;
+      border-left: 2px solid rgb(255, 255, 255);
+      border-right: 2px solid rgb(255, 255, 255);
+      /* background-color:aquamarine; */
+      margin: 0 auto;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 30px  30px  30px  30px;
+    }
+	</style>
+	<script>
+		function goBack() {
+			window.history.back();
+			window.history.back();
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+    <img src="NCPA-logo.png" class="logo">
+    <div class="background" >
+      <img src="back-logo-black.png" class="imgbut" onclick="goBack()" for="ctitle">
+      <h1 class="ctitle">Innohub signup</h1>
+    </div>
+		<div class="content">
+			<p style="font-size: 200%;">&nbsp;</p>
+			<p style="font-size: 200%;"><%= message %></p>
+		</div>
+	</div>
+</body>
+</html>

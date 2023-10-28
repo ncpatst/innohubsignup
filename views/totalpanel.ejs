@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innohub signup</title>
+
+    </style>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+      <img src="NCPA-logo.png" class="logo">
+      <div class="background" >
+        <img src="back-logo-black.png" class="imgbut" onclick="goBack()" for="ctitle">
+        <h1 class="ctitle">Innohub signup</h1>
+      </div>
+      <div class="contents">
+        <table id="mytable" class="table table-striped info"> </table>
+      </div>
+  </div>
+
+      
+</body>
+<script>
+  function goBack() {
+		window.history.back();
+	}
+
+
+  var table = $("#mytable");
+  var test = <%- jsondata %>;
+
+  // var n = "onclick='window.location.href('testpanel')'";
+  var init = "<tr>"
+  for (var i = 0;i<Object.keys(test[0]).length;i++){
+    var tit = "<th>"+Object.keys(test[0])[i]+"</th>";
+    init+=tit;
+   }
+  init = init+"</a></tr>";
+  // table.append(init);    
+  var content =""
+  for(var i = 0;i<test.length;i++){
+    content+= "<tr>"
+    for (var j = 0;j<Object.values(test[0]).length;j++){
+      var n = Object.values(test[i])[j];
+      var info = "<td>"+n.replace(/\n/g, "<br>")+"</td>";
+      content+=info;
+    }
+    content = content+"</tr>";
+    // console.log(content)
+  }
+  table.append(init+content);
+  
+  // console.log(Object.values(test[0]).length);
+</script>
+</html>
