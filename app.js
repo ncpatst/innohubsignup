@@ -21,17 +21,6 @@ app.use(bodyParser.json())
 
 const $ = jquery
 
-// const mysql = require("mysql");
-// const connection= mysql.createConnection({
-// 	host:'127.0.0.1',
-// 	user:'student',
-// 	password:'fin5)SDK',
-// 	database:'students'
-// });
-
-
-
-
 app.get('/', function(req, res) {
     res.render("index.ejs");
 })
