@@ -21,27 +21,14 @@ app.use(bodyParser.json())
 
 const $ = jquery
 
-const mysql = require("mysql");
-const connection= mysql.createConnection({
-	host:'127.0.0.1',
-	user:'student',
-	password:'fin5)SDK',
-	database:'students'
-});
+// const mysql = require("mysql");
+// const connection= mysql.createConnection({
+// 	host:'127.0.0.1',
+// 	user:'student',
+// 	password:'fin5)SDK',
+// 	database:'students'
+// });
 
-var transporter = nodemailer.createTransport({
-    service: "Outlook365",
-    host: 'smtp.office365.com',
-    secureConnection: false, // TLS requires secureConnection to be false
-    port: 587, // port for secure SMTP
-    tls: {
-       ciphers:'SSLv3'
-    },
-    auth: {
-        user: 'signup-notification@ncpachina.org',
-        pass: 'fJG7H3,W'
-    }
-});
 
 
 
@@ -85,19 +72,6 @@ app.get('/submit', function(req, res){
                         console.log(err.message);
                     }
                     else{
-                        var sendinfomation = Name+" has signup the innohub at "+date+" "+time+" for "+ classname+"\nPurpose: "+purpose+"\nAddinformation:"+addinfo;
-                        var mailOptions = {
-                            from: 'signup-notification@ncpachina.org',
-                            to: email,
-                            cc:'thorn@ncpachina.org',
-                            subject: 'Innohub signup',
-                            text: sendinfomation,
-                        }                                                                    
-                        transporter.sendMail(mailOptions, function(error, info){
-                            if (error) {
-                                console.log(error.message)
-                            }
-                        });
                         res.render("submit.ejs",{teachername:Name,classs:classname,date:date,timePeriod:time})
                     }
                 }) 
